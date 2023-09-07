@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background-image: url("chintu.jpg");
+            background-size:100%  900px;
+            background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 1200px;
+            margin: 100px auto;
+        }
+        h1 {
+            color: crimson;
+            font-size: 80px;
+        }
+        p{
+            color: lime;
+            font-size: 50px;
+        }
+        #birthdayMessage {
+            font-size: 50px;
+            margin-top: 20px;
+        }
+        #button {
+            background-color: blueviolet;
+            color:rgb(5, 44, 56);
+            width: 500px;
+            height: 100px;
+            padding: 10px 20px;
+            border: none;
+            cursor:pointer;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Many More Happy Returns Of The Day, <br> My Life <br>My Dear Chintu</h1>
+        <p id="birthdayMessage"> Enno marenno puttina rojulu aanandham gaa jarupukovaalani Korukuntoooo <br> Happy Birthday To You <br> My Life</p>
+        <button id="button" onclick="changeMessage()">Change Message</button>
+    </div>
+
+    <script>
+        function changeMessage() {
+            const newMessage = "Ilaagey Nindu noorelloo Aanandhamgaa Prasaanthamgaa Jeevinchaali ani manasporthigaa Korukuntunnaanu Chintu.... 🎉🎂🎈🥳";
+            document.getElementById("birthdayMessage").innerHTML = newMessage;
+        }
+    </script>
+</body>
+</html>
